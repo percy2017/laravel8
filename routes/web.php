@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Donante;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,4 +27,11 @@ Route::group(['prefix' => 'admin'], function () {
         // return view('welcome');
         return view("template");
     });
+    Route::get('/donantes', function () {
+        // return view('welcome');
+        $midata = Donante::all();
+        //return $midata;
+        return view("donantes", compact('midata'));
+    });
+    
 });

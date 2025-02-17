@@ -5,7 +5,7 @@
 
 @section('content')
 
-<h2>plantilla v1.0</h2>
+<h2>plantilla para albert</h2>
 
 @stop
 
