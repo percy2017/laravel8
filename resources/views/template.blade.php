@@ -6,6 +6,7 @@
 @section('content')
 
 <h2>plantilla v1.0</h2>
+
 @stop
 
 @section('javascript')
