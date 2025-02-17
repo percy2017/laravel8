@@ -14,5 +14,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    // return view('welcome');
+    return redirect("/admin");
+});
+
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+
+    Route::get('/template', function () {
+        // return view('welcome');
+        return view("template");
+    });
 });
